@@ -14,5 +14,13 @@ class App extends Component {
       })
     })
   }
+
+  render() {
+    return (
+      <div>
+      {this.state.peopleInSpace.map(person => person.name)}
+      </div>
+    )
+  }
 }
 export default App;
